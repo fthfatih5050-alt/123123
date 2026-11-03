@@ -1,0 +1,290 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+	background: #faf7f2;
+	color: #333;
+}
+
+header {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 40px;
+	background: rgba(30, 25, 20, 0.55);
+	backdrop-filter: blur(6px);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logo .balon {
+	font-size: 26px;
+}
+
+nav a {
+	margin-left: 26px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+nav a:hover,
+nav a.aktif {
+	color: #f0b429;
+}
+
+section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 120px 40px 80px;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #7a4a21;
+	font-size: 34px;
+	text-align: center;
+}
+
+.cizgi {
+	width: 60px;
+	height: 3px;
+	margin: 0 auto 40px;
+	background: #f0b429;
+}
+
+p {
+	max-width: 800px;
+	margin: 0 auto 16px;
+	font-size: 17px;
+	line-height: 1.8;
+	text-align: center;
+}
+
+footer {
+	padding: 20px;
+	background: #2b2118;
+	color: #ddd;
+	font-size: 14px;
+	text-align: center;
+}
+
+.galeri {
+	display: grid;
+	max-width: 1100px;
+	margin: 0 auto;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.kart {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kart img {
+	display: block;
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+	transition: 0.4s;
+}
+
+.kart:hover img {
+	transform: scale(1.06);
+}
+
+.kart span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.55);
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+
+.iletisim-kutu {
+	display: flex;
+	max-width: 500px;
+	margin: 0 auto;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.iletisim-kutu input,
+.iletisim-kutu textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 15px;
+}
+
+.iletisim-kutu button {
+	padding: 12px;
+	border: none;
+	border-radius: 6px;
+	background: #7a4a21;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.iletisim-kutu button:hover {
+	background: #f0b429;
+}
+
+.iletisim-bilgi {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.iletisim-bilgi div {
+	margin: 10px 0;
+	font-size: 18px;
+}
+
+.iletisim-bilgi a {
+	color: #7a4a21;
+	text-decoration: none;
+}
+
+.iletisim-bilgi a:hover {
+	color: #f0b429;
+}
+
+.whatsapp-buton {
+	position: fixed;
+	z-index: 200;
+	bottom: 24px;
+	left: 20px;
+	display: flex;
+	width: 54px;
+	height: 54px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: #25d366;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-buton:hover {
+	transform: scale(1.06);
+	background: #1ebd5a;
+}
+
+.whatsapp-buton:focus-visible {
+	outline: 3px solid #166534;
+	outline-offset: 3px;
+}
+
+.whatsapp-buton svg {
+	width: 28px;
+	height: 28px;
+	fill: currentColor;
+}
+
+.harita {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.harita h3 {
+	margin-bottom: 14px;
+	color: #7a4a21;
+	font-size: 22px;
+	text-align: center;
+}
+
+.harita iframe {
+	display: block;
+	width: 100%;
+	height: 360px;
+	border: 0;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hakkimizda-resim {
+	max-width: 900px;
+	margin: 40px auto 0;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hakkimizda-resim img {
+	display: block;
+	width: 100%;
+}
+
+#anasayfa {
+	position: relative;
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	background: url('img1.jpg') center / cover no-repeat;
+}
+
+#anasayfa::before {
+	position: absolute;
+	content: '';
+	inset: 0;
+	background: rgba(0, 0, 0, 0.35);
+}
+
+#anasayfa h1 {
+	position: relative;
+	color: #fff;
+	font-size: 72px;
+	letter-spacing: 8px;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 600px) {
+	header {
+		padding: 12px 18px;
+	}
+
+	nav a {
+		margin-left: 12px;
+		font-size: 13px;
+	}
+
+	.logo {
+		font-size: 17px;
+	}
+
+	#anasayfa h1 {
+		font-size: 42px;
+		letter-spacing: 4px;
+	}
+}
